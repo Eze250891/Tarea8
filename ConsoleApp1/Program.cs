@@ -130,7 +130,7 @@ namespace ConsoleApp1
             //int[] arreglo2 = new int[5];
             //int numMayor1 = 0;
             //int numMayor2 = 0;
-           
+
 
             //for (int i = 0; i < arreglo1.Length; i++)
             //{
@@ -180,7 +180,7 @@ namespace ConsoleApp1
             //int[] arreglo2 = new int[5];
             //int numMenor1 = 0;
             //int numMenor2 = 0;
-            
+
 
             //for (int i = 0; i < arreglo1.Length; i++)
             //{
@@ -223,8 +223,119 @@ namespace ConsoleApp1
             //}
 
 
-        }
-          
+
+            #endregion
+
+            #region Ejercicio 4
+
+
+            //int[] numEntero = new int[5];
+            //int esPar = 0;
+            //int numero;
+
+            //for (int i = 0; i < numEntero.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese un numero entero");
+            //    numEntero[i] = int.Parse(Console.ReadLine());
+
+            //}
+
+
+            #endregion
+
+
+            #region Ejercicio 6
+            //6.	Fácil: Declara un arreglo de strings con nombres de frutas y muestra en consola
+            //el nombre de la primera y última fruta del arreglo.
+
+
+            //string[] arregloFrutas = new string[5];
+
+            //for (int i = 0; i < arregloFrutas.Length; i++)
+            //{
+            //    Console.WriteLine("Igrese una palabra");
+            //    arregloFrutas[i] = (Console.ReadLine());
+
+            //}
+
+            //    Console.WriteLine(arregloFrutas[3]);
+            //    Console.WriteLine(arregloFrutas[2]);
+
+            #endregion
+
+            #region Ejercicio 7
+
+            //7.Fácil: Declara un arreglo de números enteros y muestra en consola los elementos que son mayores a 5.
+
+            //int[] numMayor5 = new int[5];
+            //int numero = 0;
+
+            //for (int i = 0; i < numMayor5.Length; i++) 
+            //{
+            //    Console.WriteLine("Ingrese un numero entero");
+            //    numMayor5[i] = int.Parse(Console.ReadLine());
+            //    numero = numMayor5[i];
+            //}
+
+            //for (int i = 0; i < numMayor5.Length ; i++)
+            //{
+            //    if (numMayor5[i] > 5)
+            //    {
+            //        numero++;
+            //    }
+            //}
+            //Console.WriteLine(numero);
+
+            #endregion
+
+            #region Ejercicio 8
+
+            //int[] arrInverso = new int[5];
+
+            //for (int i = 0; i < arrInverso.Length; i++) 
+            //{
+            //    Console.WriteLine("Ingrese un numero");
+            //    arrInverso[i] = int.Parse(Console.ReadLine());
+            //        ;
+            //}
+            //for (int i = 4; i > -1 ;i--)
+            //{
+            //    Console.WriteLine(arrInverso[i]);
+            //}
+            #endregion
+
+            #region Ejercicio 9
+            //9.Medio: Declara un arreglo de números enteros y un número entero y muestra en consola la cantidad de elementos 
+            // del arreglo que son iguales al número entero dado.
+
+            int[] arrEnteros = new int[5];
+            int numEntero = 0;
+
+            Console.WriteLine("Ingrese un numero Entero");
+            numEntero = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < arrEnteros.Length; i++)
+            {
+                Console.WriteLine("ingrese los datos para el arreglo");
+                arrEnteros[i] = int.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < arrEnteros.Length; i++)
+            {
+                if(numEntero < arrEnteros[i])
+                {
+                    arrEnteros[i] = arrEnteros[i];
+                }
+                if(numEntero > arrEnteros[i])
+                {
+                    arrEnteros[i] = arrEnteros[i];
+                }
+                else
+                {
+                    
+                }
+                Console.WriteLine(arrEnteros);
+            }
 
 
             #endregion
@@ -232,3 +343,5 @@ namespace ConsoleApp1
 
         }
     }
+
+}
