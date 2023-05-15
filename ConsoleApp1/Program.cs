@@ -8,6 +8,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            #region Funcion declaratoria de arreglo
+
+            //static int[] DeclararArreglo()
+            //{
+            //    int[] arreglo = new int[5];
+
+
+            //    for (int i = 0; i < arreglo.Length; i++)
+            //    {
+            //        Console.WriteLine("Ingrese un numero entero");
+            //        arreglo[i] = int.Parse(Console.ReadLine());
+            //    }
+            //    return arreglo;
+            //}
+
+            #endregion
+
             #region Ejercicios 1
             //1.	Fácil: Declara un arreglo de números enteros
             //a.muestra en consola la suma de todos sus elementos.
@@ -18,6 +35,8 @@ namespace ConsoleApp1
             //------------------ a -----------------------
             //int[] numEnteros = new int[10];
             //int resultado = 0;
+            //int numMayor = 0;
+            //int numMenor = 0;
 
             //for (int i = 0; i < numEnteros.Length; i++)
             //{
@@ -28,33 +47,55 @@ namespace ConsoleApp1
 
             //for (int i = 0; i < numEnteros.Length; i++)
             //{
-            //    resultado += numEnteros[i]; //Aca almaceno y sumo el numero nuevo
+            //    resultado += numEnteros[i]; //Aca almaceno y sumo el numero nuevo o siguiente
+
+            //    if (i == 0) // aca ingreso el primer numero al indice cero 0 y lo almaceno para luego compararlo
+            //    {
+            //        numMayor = numEnteros[i]; // almaceno el mismo numero en cada variable para luego ir comparando y descartando
+            //        numMenor = numEnteros[i];
+            //    }
+
+            //    if (numEnteros[i] >= numMayor) // aca comparo esa variable numMayor con los numeros siguientes del arreglo
+            //    {
+            //        numMayor = numEnteros[i];
+            //    }
+            //    if (numEnteros[i] < numMenor)
+            //    {
+            //        numMenor = numEnteros[i];
+            //    }
+
             //}
 
             //Console.WriteLine($"El Resulado de la suma de todos los numeros ingresados es {resultado}");
+            //Console.WriteLine($"el numero mayo de este arreglo es el {numMayor}");
+            //Console.WriteLine($"el numero mayo de este arreglo es el {numMenor}");
 
             //------------------ b -----------------------
 
             //int[] num = new int[10];
             //int numMayor = 0;
 
-            //for (int i = 0; i < num.Length; i++) 
+            //for (int i = 0; i < num.length; i++)
             //{
-            //    Console.WriteLine("Ingrese un num");
-            //    num[i] = int.Parse(Console.ReadLine());
+            //    console.writeline("ingrese un num");
+            //    num[i] = int.parse(console.readline());
 
-            //    if (num[i] == 0)
+            //}
+
+            //for (int i = 0; i < num.length; i++)
+            //{
+            //    if (i == 0) // aca ingreso el primer numero y luego comparo
             //    {
-            //        numMayor += num[i];
+            //        numMayor = num[i];
             //    }
 
-            //    if (num[i] > numMayor)
+            //    if (num[i] >= numMayor) // aca comparo esa variable nummayor con los numeros siguientes del arreglo
             //    {
             //        numMayor = num[i];
             //    }
             //}
 
-            //Console.WriteLine($"El numero mayo de este arreglo es el {numMayor}");
+            //console.writeline($"el numero mayo de este arreglo es el {numMayor}");
 
 
             //------------------ c -----------------------
@@ -67,7 +108,11 @@ namespace ConsoleApp1
             //    Console.WriteLine("Ingrese un dato");
             //    numP[i] = int.Parse(Console.ReadLine());
 
-            //    if (i == 0) // no anda cuando ponia if (numP[i] == 0)
+            //}
+
+            //for (int i = 0; i < numP.Length; i++)
+            //{
+            //    if (i == 0)
             //    {
             //        numMenor += numP[i];
             //    }
@@ -94,21 +139,40 @@ namespace ConsoleApp1
 
             //-------------------------------- a --------------------------------
             //int[] arregloPrimero = new int[5];
-            //int[] arregloSegundo = new int[5];
+            //int[] arregloSegundo = new int[5]; // no hace falta iniciar las variables antes, mejor en el lugar que se van a usar
             //int resultado1 = 0;
-            //int resultado2 = 0;
+
+
+            //int numMayor1 = 0;
+            //int numMenor1 = 0;
 
 
 
-            //for (int i = 0; i < arregloPrimero.Length; i++) 
+            //for (int i = 0; i < arregloPrimero.Length; i++)
             //{
             //    Console.WriteLine("ingrese un numero para el primero arreglo");
             //    arregloPrimero[i] = int.Parse(Console.ReadLine());
             //}
 
-            //for (int i = 0;i < arregloPrimero.Length; i++)
+            //for (int i = 0; i < arregloPrimero.Length; i++)
             //{
-            //    resultado1 += arregloPrimero[i];
+            //    resultado1 += arregloPrimero[i]; // almaceno y cada numero del arreglo en esa variable
+
+            //    if (i == 0)
+            //    {
+            //        numMayor1 += arregloPrimero[i]; //almaceno el primero numero en cada una de estas variable
+            //        numMenor1 += arregloPrimero[i];
+            //    }
+            //    if (arregloPrimero[i] > numMayor1) // aca comparo ese num guardado contra cada indice del arreglo
+            //    {
+            //        numMayor1 = arregloPrimero[i]; // si el numero ingresado en el indice es mayor al anterior, pasa a reemplazarlo
+            //    }
+
+            //    if (arregloPrimero[i] < numMenor1) //lo mismo pero se reemplaza con un numero menor 
+            //    {
+            //        numMenor1 = arregloPrimero[i];
+            //    }
+
             //}
 
             //for (int i = 0; i < arregloSegundo.Length; i++)
@@ -117,132 +181,101 @@ namespace ConsoleApp1
             //    arregloSegundo[i] = int.Parse(Console.ReadLine());
             //}
 
-            //for(int i = 0; i <arregloSegundo.Length ; i++)
+            //for (int i = 0; i < arregloSegundo.Length; i++)
             //{
-            //    resultado2 += arregloSegundo[i];
-            //}
+            //    resultado1+= arregloSegundo[i];  // aca a la suma final del primer arreglo, continuo sumando los datos ingresados de cada indice del 2do arreglo
 
-            //Console.WriteLine($"La suma de los dos arreglos da = {resultado1+resultado2}");
-
-            //-------------------------------- b --------------------------------
-
-            //int[] arreglo1 = new int[5];
-            //int[] arreglo2 = new int[5];
-            //int numMayor1 = 0;
-            //int numMayor2 = 0;
-
-
-            //for (int i = 0; i < arreglo1.Length; i++)
-            //{
-            //    Console.WriteLine("Ingrese un numero para el primer arreglo");
-            //    arreglo1[i] = int.Parse(Console.ReadLine());
-
-            //    if (arreglo1[i] == 0)
+            //    if (arregloSegundo[i] >= numMayor1)  //comparo el numero mayor del primer arreglo contra todos los ingresados en el arreglo 2
             //    {
-            //        numMayor1 += arreglo1[i];
+            //        numMayor1 = arregloSegundo[i]; // si alguno del arreglo2 es mayor al resultado del mayor arreglo1 entonces lo reemplaza
             //    }
-            //    if (arreglo1[i] > numMayor1)
+            //    if (arregloSegundo[i] <= numMenor1) // lo mismo pero con el menor
             //    {
-            //     numMayor1 = arreglo1[i];
+            //        numMenor1 = arregloSegundo[i];
             //    }
             //}
 
-            //for (int i = 0; i < arreglo2.Length; i++)
-            //{
-            //    Console.WriteLine("ingrese un numero para el segundo arreglo");
-            //    arreglo2[i] = int.Parse(Console.ReadLine());
+            //Console.WriteLine(numMayor1);
+            //Console.WriteLine(numMenor1);
+            //Console.WriteLine(resultado1);
 
-            //    if (arreglo2[i] == 0)
-            //    {
-            //        numMayor2 += arreglo2[i];
-            //    }
-            //    if (arreglo2[i] > numMayor2)
-            //    {
-            //        numMayor2 = arreglo2[i];
-            //    }
+            #endregion
+
+            #region Ejercicio 3
+
+            //3.Fácil: Declara un arreglo de números enteros y un número entero y muestra en consola la cantidad de elementos del arreglo
+            //que son mayores que el número entero dado.
+
+            //int[] arreglo = new int[5];
+
+
+            //for (int i = 0; i < arreglo.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese un dato para completar el arreglo");
+            //    arreglo[i] = int.Parse(Console.ReadLine()); //relleno el arreglo con los datos ingresados
             //}
 
-            //if(numMayor1 >= numMayor2)
+            //Console.WriteLine("ingresa el numero entero");
+            //int numero = int.Parse(Console.ReadLine()); //ingreso el numero entero
+            //int contador = 0;
+
+            //for (int i = 0;i < arreglo.Length; i++)
             //{
-            //    Console.WriteLine(numMayor1);
-            //}
-
-            //else
-            //{
-            //    Console.WriteLine(numMayor2);
-            //}
-
-
-            //-------------------------------- c --------------------------------
-
-
-            //int[] arreglo1 = new int[5];
-            //int[] arreglo2 = new int[5];
-            //int numMenor1 = 0;
-            //int numMenor2 = 0;
-
-
-            //for (int i = 0; i < arreglo1.Length; i++)
-            //{
-            //    Console.WriteLine("Ingrese un numero para el primer arreglo");
-            //    arreglo1[i] = int.Parse(Console.ReadLine());
-
-            //    if (i == 0)  //si pongo arreglo1[i] no funca
+            //    if (arreglo[i] > numero) //si los numeros en el arreglo son mayores al numero entero, cuenta +1
             //    {
-            //        numMenor1 += arreglo1[i];
-            //    }
-            //    if (arreglo1[i] < numMenor1)
-            //    {
-            //        numMenor1 = arreglo1[i];
+            //        contador++; //cuenta la cantidad de veces que son mayores a ese numero ingresado
             //    }
             //}
+            //Console.WriteLine(contador);
 
-            //for (int i = 0; i < arreglo2.Length; i++)
-            //{
-            //    Console.WriteLine("ingrese un numero para el segundo arreglo");
-            //    arreglo2[i] = int.Parse(Console.ReadLine());
-
-            //    if (i == 0)  //si pongo arreglo2[i] no funca
-            //    {
-            //        numMenor2 += arreglo2[i];
-            //    }
-            //    if (arreglo2[i] < numMenor2)
-            //    {
-            //        numMenor2 = arreglo2[i];
-            //    }
-            //}
-
-            //if (numMenor1 <= numMenor2)
-            //{
-            //    Console.WriteLine(numMenor1);
-            //}
-
-            //else
-            //{
-            //    Console.WriteLine(numMenor2);
-            //}
 
 
 
             #endregion
 
             #region Ejercicio 4
+            //Declara un arreglo de números enteros y muestra en consola los elementos que son pares.
 
+            //int[] arregloPar = new int[5];
 
-            //int[] numEntero = new int[5];
-            //int esPar = 0;
-            //int numero;
-
-            //for (int i = 0; i < numEntero.Length; i++)
+            //for (int i = 0; i < arregloPar.Length; i++)
             //{
-            //    Console.WriteLine("Ingrese un numero entero");
-            //    numEntero[i] = int.Parse(Console.ReadLine());
-
+            //    Console.WriteLine("Ingrese datos para completar el arreglo");
+            //    arregloPar[i] = int.Parse(Console.ReadLine());
             //}
+
+            //for (int i = 0;i < arregloPar.Length;i++)
+            //{
+            //    if (arregloPar[i] % 2 ==0)
+            //    {
+            //        Console.WriteLine(arregloPar[i]);
+            //    }
+            //}
+
 
 
             #endregion
 
+            #region Ejercicio 5
+
+            //int[] numImpar = new int[5];
+
+            //for (int i = 0; i < numImpar.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese numeros enteros para completar el arreglo");
+            //    numImpar[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0;i < numImpar.Length; i++)
+            //{
+            //    if (numImpar[i] % 2 ==1)
+            //    {
+            //        Console.WriteLine(numImpar[i]);
+            //    }
+            //}
+
+
+            #endregion
 
             #region Ejercicio 6
             //6.	Fácil: Declara un arreglo de strings con nombres de frutas y muestra en consola
@@ -258,8 +291,8 @@ namespace ConsoleApp1
 
             //}
 
-            //    Console.WriteLine(arregloFrutas[3]);
-            //    Console.WriteLine(arregloFrutas[2]);
+            //Console.WriteLine(arregloFrutas[0]);
+            //Console.WriteLine(arregloFrutas[4]);
 
             #endregion
 
@@ -270,14 +303,13 @@ namespace ConsoleApp1
             //int[] numMayor5 = new int[5];
             //int numero = 0;
 
-            //for (int i = 0; i < numMayor5.Length; i++) 
+            //for (int i = 0; i < numMayor5.Length; i++)
             //{
             //    Console.WriteLine("Ingrese un numero entero");
             //    numMayor5[i] = int.Parse(Console.ReadLine());
-            //    numero = numMayor5[i];
             //}
 
-            //for (int i = 0; i < numMayor5.Length ; i++)
+            //for (int i = 0; i < numMayor5.Length; i++)
             //{
             //    if (numMayor5[i] > 5)
             //    {
@@ -290,17 +322,19 @@ namespace ConsoleApp1
 
             #region Ejercicio 8
 
+            //8.Fácil: Declara un arreglo de números enteros y muestra
+            //  en consola los elementos del arreglo en orden inverso.
+
             //int[] arrInverso = new int[5];
 
-            //for (int i = 0; i < arrInverso.Length; i++) 
+            //for (int i = 0; i < arrInverso.Length; i++)
             //{
-            //    Console.WriteLine("Ingrese un numero");
-            //    arrInverso[i] = int.Parse(Console.ReadLine());
-            //        ;
+            //   Console.WriteLine("Ingrese un numero");
+            //   arrInverso[i] = int.Parse(Console.ReadLine());
             //}
-            //for (int i = 4; i > -1 ;i--)
+            //for (int i = 4; i >= 0; i--)
             //{
-            //    Console.WriteLine(arrInverso[i]);
+            //   Console.WriteLine(arrInverso[i]);
             //}
             #endregion
 
@@ -308,39 +342,171 @@ namespace ConsoleApp1
             //9.Medio: Declara un arreglo de números enteros y un número entero y muestra en consola la cantidad de elementos 
             // del arreglo que son iguales al número entero dado.
 
-            int[] arrEnteros = new int[5];
-            int numEntero = 0;
+            //int[] arrEnteros = new int[5];
+            //int numEntero = 0;
+            //int contador = 0;    
 
-            Console.WriteLine("Ingrese un numero Entero");
-            numEntero = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Ingrese un numero Entero");
+            //numEntero = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < arrEnteros.Length; i++)
-            {
-                Console.WriteLine("ingrese los datos para el arreglo");
-                arrEnteros[i] = int.Parse(Console.ReadLine());
-            }
 
-            for (int i = 0; i < arrEnteros.Length; i++)
-            {
-                if(numEntero < arrEnteros[i])
-                {
-                    arrEnteros[i] = arrEnteros[i];
-                }
-                if(numEntero > arrEnteros[i])
-                {
-                    arrEnteros[i] = arrEnteros[i];
-                }
-                else
-                {
-                    
-                }
-                Console.WriteLine(arrEnteros);
-            }
+            //for (int i = 0; i < arrEnteros.Length; i++)
+            //{
+            //    Console.WriteLine("ingrese los datos para el arreglo");
+            //    arrEnteros[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0; i < arrEnteros.Length; i++)
+            //{
+            //    if (arrEnteros[i] == numEntero)
+            //    {
+            //        contador++;
+            //    }
+            //}
+
+            //Console.WriteLine(contador);
+
 
 
             #endregion
 
+            #region Ejercicio 10
 
+            //10.Medio: Declara un arreglo de números enteros y muestra en consola
+            //   la cantidad de elementos pares que tiene.
+
+            //int[] par = new int[6];
+            //int contadorPar = 0;
+
+            //for (int i = 0; i < par.Length; i++) 
+            //{
+            //    Console.WriteLine("Ingrese un dato para llenar el arreglo");
+            //    par[i] = int.Parse(Console.ReadLine());   
+            //}
+
+            //for (int i = 0; i <  par.Length; i++) 
+            //{
+            //    if (par[i] % 2 == 0)
+            //    {
+            //        contadorPar++;
+            //    }
+            //}
+            //Console.WriteLine(contadorPar++);
+
+
+            #endregion
+
+            #region Ejercicio 10
+
+            //10.Medio: Declara un arreglo de números enteros y muestra en consola
+            //   la cantidad de elementos pares que tiene.
+
+            //int[] par = new int[6];
+            //int contadorPar = 0;
+
+            //for (int i = 0; i < par.Length; i++) 
+            //{
+            //    Console.WriteLine("Ingrese un dato para llenar el arreglo");
+            //    par[i] = int.Parse(Console.ReadLine());   
+            //}
+
+            //for (int i = 0; i <  par.Length; i++) 
+            //{
+            //    if (par[i] % 2 == 0)
+            //    {
+            //        contadorPar++;
+            //    }
+            //}
+            //Console.WriteLine(contadorPar++);
+
+
+            #endregion
+
+            #region Ejercicio 11
+            //11.	Medio: Declara un arreglo de números enteros y muestra en consola
+            //la cantidad de elementos impares que tiene.
+
+            //int[] arregloImpar = new int[8];
+            //int contadorImpar = 0;
+
+            //for (int i = 0; i < arregloImpar.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese un numero para completar el arreglo");
+            //    arregloImpar[i] =  int.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0;i < arregloImpar.Length; i++)
+            //{
+            //    if (arregloImpar[i] %2 == 1)
+            //    {
+            //        contadorImpar++;
+            //    }
+            //}
+            //Console.WriteLine(contadorImpar);
+
+            #endregion
+
+            #region Ejercicio 12
+            // 12.	Medio: Declara un arreglo de números enteros y
+            // muestra en consola el promedio de todos sus elementos.
+
+            //double[] arrPromedio = new double  [5];
+            //double promedio = 0;
+
+            //for (int i = 0; i < arrPromedio.Length; i++)
+            //{
+            //    Console.WriteLine("ingrese los datos para el arreglo");
+            //    arrPromedio[i] = double.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0;i < arrPromedio.Length;i++)
+            //{
+            //    promedio += arrPromedio[i];
+            //}
+            //Console.WriteLine(promedio);
+            //Console.WriteLine($"El promedio es {promedio / arrPromedio.Length}");
+
+            #endregion
+
+            #region Ejercicio 13
+            // Declara dos arreglos de números enteros y muestra en consola los elementos que tienen en común.
+
+            //int[] arreglo1 = new int[3];
+
+            //for (int i = 0;i < arreglo1.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese los datos para el primer arreglo");
+            //    arreglo1[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int[] arreglo2 = new int[3];
+
+            //for (int i = 0;i < arreglo2.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese los datos para el segundo arreglo");
+            //    arreglo2[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int[] arreglo3 = new int[6];
+            //int indiceResultado = 0;
+            //// recorro el primero arreglo
+
+            //for (int i = 0;i < arreglo1.Length;i++)
+            //{
+            //    for (int j = 0; j < arreglo2.Length; j++) //primero compara toda i contra j y cuando termina pasa al siguiente i
+            //    {
+            //        if (arreglo1[i] == arreglo2[j])
+            //        {
+            //           arreglo3[indiceResultado] = arreglo1[i]; //aca se almacena en el indice 0, el primer numero igualado
+            //           indiceResultado++;
+            //        }
+            //    }
+            //}
+            //for (int i = 0;i < indiceResultado; i++)
+            //{
+            //    Console.WriteLine($"se repite {arreglo3[i]}");
+            //}
+            #endregion
         }
     }
 
