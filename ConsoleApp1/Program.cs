@@ -266,9 +266,9 @@ namespace ConsoleApp1
             //    numImpar[i] = int.Parse(Console.ReadLine());
             //}
 
-            //for (int i = 0;i < numImpar.Length; i++)
+            //for (int i = 0; i < numImpar.Length; i++)
             //{
-            //    if (numImpar[i] % 2 ==1)
+            //    if (numImpar[i] % 2 != 0)
             //    {
             //        Console.WriteLine(numImpar[i]);
             //    }
@@ -278,7 +278,7 @@ namespace ConsoleApp1
             #endregion
 
             #region Ejercicio 6
-            //6.	Fácil: Declara un arreglo de strings con nombres de frutas y muestra en consola
+            //6.Fácil: Declara un arreglo de strings con nombres de frutas y muestra en consola
             //el nombre de la primera y última fruta del arreglo.
 
 
@@ -292,7 +292,7 @@ namespace ConsoleApp1
             //}
 
             //Console.WriteLine(arregloFrutas[0]);
-            //Console.WriteLine(arregloFrutas[4]);
+            //Console.WriteLine(arregloFrutas[arregloFrutas.Length-1]);
 
             #endregion
 
@@ -396,32 +396,6 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region Ejercicio 10
-
-            //10.Medio: Declara un arreglo de números enteros y muestra en consola
-            //   la cantidad de elementos pares que tiene.
-
-            //int[] par = new int[6];
-            //int contadorPar = 0;
-
-            //for (int i = 0; i < par.Length; i++) 
-            //{
-            //    Console.WriteLine("Ingrese un dato para llenar el arreglo");
-            //    par[i] = int.Parse(Console.ReadLine());   
-            //}
-
-            //for (int i = 0; i <  par.Length; i++) 
-            //{
-            //    if (par[i] % 2 == 0)
-            //    {
-            //        contadorPar++;
-            //    }
-            //}
-            //Console.WriteLine(contadorPar++);
-
-
-            #endregion
-
             #region Ejercicio 11
             //11.	Medio: Declara un arreglo de números enteros y muestra en consola
             //la cantidad de elementos impares que tiene.
@@ -432,12 +406,12 @@ namespace ConsoleApp1
             //for (int i = 0; i < arregloImpar.Length; i++)
             //{
             //    Console.WriteLine("Ingrese un numero para completar el arreglo");
-            //    arregloImpar[i] =  int.Parse(Console.ReadLine());
+            //    arregloImpar[i] = int.Parse(Console.ReadLine());
             //}
 
-            //for (int i = 0;i < arregloImpar.Length; i++)
+            //for (int i = 0; i < arregloImpar.Length; i++)
             //{
-            //    if (arregloImpar[i] %2 == 1)
+            //    if (arregloImpar[i] % 2 != 0)
             //    {
             //        contadorImpar++;
             //    }
@@ -473,7 +447,7 @@ namespace ConsoleApp1
 
             //int[] arreglo1 = new int[3];
 
-            //for (int i = 0;i < arreglo1.Length; i++)
+            //for (int i = 0; i < arreglo1.Length; i++)
             //{
             //    Console.WriteLine("Ingrese los datos para el primer arreglo");
             //    arreglo1[i] = int.Parse(Console.ReadLine());
@@ -481,7 +455,7 @@ namespace ConsoleApp1
 
             //int[] arreglo2 = new int[3];
 
-            //for (int i = 0;i < arreglo2.Length; i++)
+            //for (int i = 0; i < arreglo2.Length; i++)
             //{
             //    Console.WriteLine("Ingrese los datos para el segundo arreglo");
             //    arreglo2[i] = int.Parse(Console.ReadLine());
@@ -491,21 +465,61 @@ namespace ConsoleApp1
             //int indiceResultado = 0;
             //// recorro el primero arreglo
 
-            //for (int i = 0;i < arreglo1.Length;i++)
+            //for (int i = 0; i < arreglo1.Length; i++)
             //{
             //    for (int j = 0; j < arreglo2.Length; j++) //primero compara toda i contra j y cuando termina pasa al siguiente i
             //    {
             //        if (arreglo1[i] == arreglo2[j])
             //        {
-            //           arreglo3[indiceResultado] = arreglo1[i]; //aca se almacena en el indice 0, el primer numero igualado
-            //           indiceResultado++;
+            //            arreglo3[indiceResultado] = arreglo1[i]; //aca se almacena en el indice 0, el primer numero igualado
+            //            indiceResultado++;
             //        }
             //    }
             //}
-            //for (int i = 0;i < indiceResultado; i++)
+            //for (int i = 0; i < indiceResultado; i++)
             //{
             //    Console.WriteLine($"se repite {arreglo3[i]}");
             //}
+            #endregion
+
+            #region Ejercicio 14
+            //int[] arreglo1 = new int[5];
+
+            //for (int i = 0;i < arreglo1.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese los datos para el primer arreglo");
+            //    arreglo1[i] = int.Parse(Console.ReadLine());
+
+            //}
+
+            //int[] arreglo2 = new int[5];
+
+            //for(int i = 0; i < arreglo2.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese los datos del segundo arreglo");
+            //    arreglo2[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int[] arreglo3 = new int[5];
+            //int contadorIndice = 0;
+
+            //for(int i = 0; i < arreglo1.Length; i++)
+            //{ 
+            //    for (int j = 0; j < arreglo2.Length ; i++)
+            //    {
+            //        if (arreglo1[i] != arreglo2[j])
+            //        {
+            //            arreglo3[contadorIndice] = arreglo2[j];
+            //            contadorIndice++;
+            //        }
+            //    }
+            //}
+            //for (int i = 0; i < contadorIndice; i++)
+            //{
+            //    Console.WriteLine($"No repite {arreglo3[i]}");
+            //}
+
+
             #endregion
         }
     }
