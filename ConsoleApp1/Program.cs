@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Runtime.Serialization.Formatters;
 using System.Xml.Linq;
 
 namespace ConsoleApp1
@@ -482,10 +483,10 @@ namespace ConsoleApp1
             //}
             #endregion
 
-            #region Ejercicio 14
+            #region Ejercicio 14  incompleto
             //int[] arreglo1 = new int[5];
 
-            //for (int i = 0;i < arreglo1.Length; i++)
+            //for (int i = 0; i < arreglo1.Length; i++)
             //{
             //    Console.WriteLine("Ingrese los datos para el primer arreglo");
             //    arreglo1[i] = int.Parse(Console.ReadLine());
@@ -494,7 +495,7 @@ namespace ConsoleApp1
 
             //int[] arreglo2 = new int[5];
 
-            //for(int i = 0; i < arreglo2.Length; i++)
+            //for (int i = 0; i < arreglo2.Length; i++)
             //{
             //    Console.WriteLine("Ingrese los datos del segundo arreglo");
             //    arreglo2[i] = int.Parse(Console.ReadLine());
@@ -503,24 +504,170 @@ namespace ConsoleApp1
             //int[] arreglo3 = new int[5];
             //int contadorIndice = 0;
 
-            //for(int i = 0; i < arreglo1.Length; i++)
-            //{ 
-            //    for (int j = 0; j < arreglo2.Length ; i++)
+            //for (int i = 0; i < arreglo1.Length; i++)
+            //{
+            //    for (int j = 0; j < arreglo2.Length; i++)
             //    {
-            //        if (arreglo1[i] != arreglo2[j])
+            //        if (arreglo1.Length != arreglo2.Length)
             //        {
-            //            arreglo3[contadorIndice] = arreglo2[j];
+            //            arreglo3[contadorIndice] = arreglo1[i];
             //            contadorIndice++;
+            //        }
+            //        else
+            //        {
+            //            arreglo3[contadorIndice] = 0;
             //        }
             //    }
             //}
+
             //for (int i = 0; i < contadorIndice; i++)
             //{
             //    Console.WriteLine($"No repite {arreglo3[i]}");
             //}
 
+            #endregion  
+
+            #region Ejercicio 17
+
+            //Declara un arreglo de números enteros y muestra en consola los
+            //elementos que están en posiciones impares del arreglo.
+
+            //int[] arregloImpar = new int[5];
+
+            //for (int i = 0; i < arregloImpar.Length; i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo");
+            //    arregloImpar[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0; i < arregloImpar.Length; i++)
+            //{
+            //    if (i % 2 != 0)
+            //    {
+            //        Console.WriteLine(arregloImpar[i]);
+            //    }
+            //}
+
 
             #endregion
+
+            #region Ejercicio 18
+            //Declara un arreglo de números enteros y muestra en consola los elementos
+            //    que están en posiciones pares del arreglo.
+
+            //int[] arregloPar = new int[5];
+
+            //for (int i = 0; i < arregloPar.Length; i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo");
+            //    arregloPar[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0;i < arregloPar.Length;i++)
+            //{
+            //    if(i % 2 == 0)
+            //    {
+            //        Console.WriteLine(arregloPar[i]);
+            //    }
+            //}
+
+
+
+
+            #endregion
+
+            #region Ejercicio 19
+
+            //Declara un arreglo de números enteros y encuentra la suma de todos
+            //    los elementos que están en posiciones pares.
+
+            //int[] arregloPosPar = new int[10]; // sumando del 1 al 10, da 25
+            //int sumaTotal = 0;
+
+            //for (int i = 0; i < arregloPosPar.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese un numero para completar el Arreglo");
+            //    arregloPosPar[i] = int.Parse(Console.ReadLine());    
+            //}
+
+            //for (int i = 0;i < arregloPosPar.Length;i++)
+            //{
+            //    if(i % 2 == 0) // aca le digo que solo cuando i sea par almacene y sume
+            //    {
+            //        sumaTotal += arregloPosPar[i];//almacena y suma
+            //    }
+            //}
+
+            //Console.WriteLine(sumaTotal);
+
+
+
+            #endregion
+
+            #region Ejercicio 20
+
+            //Declarar un arreglo de números enteros y mostrar en consola los elementos
+            //que están en posiciones que son múltiplos de 3.
+
+            //int[] arregloMulti = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 };
+
+            //for (int i = 0; i < arregloMulti.Length; i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo");     ////// comento eso asi uso el arreglo mas largo predeterminado
+            //    arregloMulti[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0; i < arregloMulti.Length; i++)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        Console.WriteLine(arregloMulti[i]);
+            //    }
+            //}
+
+
+            #endregion
+
+            #region Ejercicio 21
+
+            //Declarar un arreglo de números enteros y un número entero y
+            //muestra en consola los elementos del arreglo que son mayores que el
+            //número entero dado y que están en posiciones impares.
+
+
+            //Console.WriteLine("Ingrese un numero entero");
+            // int numEntero = int.Parse(Console.ReadLine());
+
+            //int[] arregloIpar = new int[5];
+
+            //for (int i = 0; i < arregloIpar.Length; i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo");
+            //    arregloIpar[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0; i < arregloIpar.Length; i++)
+            //{
+            //    if (arregloIpar[i] >= numEntero)
+            //    {
+            //         if(i % 2 != 0)
+            //         {
+            //           Console.WriteLine(arregloIpar[i]);
+            //         }
+            //    }
+
+            //}
+
+            #endregion
+
+            #region Ejercicio 23 //sin hacer
+            //Declarar un arreglo de números enteros y ordena los elementos de manera
+            //ascendente y muestra el arreglo ordenado en consola.
+
+          
+            #endregion
+
+
         }
     }
 
