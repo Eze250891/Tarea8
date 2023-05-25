@@ -11,19 +11,33 @@ namespace ConsoleApp1
         {
             #region Funcion declaratoria de arreglo
 
-            //static int[] DeclararArreglo()
-            //{
-            //    int[] arreglo = new int[5];
+            static int[] DeclararArreglo()
+            {
+                int[] arreglo = new int[5];
 
 
-            //    for (int i = 0; i < arreglo.Length; i++)
-            //    {
-            //        Console.WriteLine("Ingrese un numero entero");
-            //        arreglo[i] = int.Parse(Console.ReadLine());
-            //    }
-            //    return arreglo;
-            //}
+                for (int i = 0; i < arreglo.Length; i++)
+                {
+                    Console.WriteLine("Ingrese un numero entero");
+                    arreglo[i] = int.Parse(Console.ReadLine());
+                }
+                return arreglo;
+            }
 
+            #endregion
+
+            #region Funcion declaratoria arreglo string
+            static string[] DeclararArregloString()
+            {
+                string[] arregloString = new string[5];
+                
+                for (int i = 0; i < arregloString.Length; i++)
+                {
+                    Console.WriteLine("complete el arreglo de string");
+                    arregloString[i] = Console.ReadLine();
+                }
+                return arregloString;
+            }
             #endregion
 
             #region Ejercicios 1
@@ -525,7 +539,7 @@ namespace ConsoleApp1
             //    Console.WriteLine($"No repite {arreglo3[i]}");
             //}
 
-            #endregion  
+            #endregion
 
             #region Ejercicio 17
 
@@ -664,9 +678,140 @@ namespace ConsoleApp1
             //Declarar un arreglo de números enteros y ordena los elementos de manera
             //ascendente y muestra el arreglo ordenado en consola.
 
-          
+
             #endregion
 
+            #region Ejercicio 26
+
+            // Declarar un arreglo de strings y cuenta la cantidad de elementos
+            // que empiezan con una letra específica.
+            // Muestra el resultado en consola.
+
+            //string letra;
+            //Console.WriteLine("ingrese una letra");
+            //letra = Console.ReadLine();
+
+            //string [] arregloString = new string[5];
+            //int contadorLetra = 0;
+
+            //for (int i = 0; i < arregloString.Length; i++)
+            //{
+            //    Console.WriteLine("ingrese una palabra para llenar el arreglo");
+            //    arregloString[i] = Console.ReadLine();
+
+            //}
+
+            //for (int i = 0;i < arregloString.Length;i++)
+            //{
+            //    if (arregloString[i].StartsWith(letra.ToString()))
+            //    {
+            //        contadorLetra++;
+            //    }
+            //}
+
+            //Console.WriteLine(contadorLetra);
+
+
+
+            #endregion
+
+            #region Ejercicio 27 
+
+            //int[] arreglo1 = new int[5];
+
+            //for (int i = 0; i < arreglo1.Length; i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo 1");
+            //    arreglo1[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int[] arreglo2 = new int[5];
+
+            //for (int i = 0; i < arreglo2.Length; i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo 2");
+            //    arreglo2[i] = int.Parse(Console.ReadLine());
+            //}
+            //int[] arreglo3 = new int[5];
+            //int indice = 0;
+
+            //for (int i = 0; i < arreglo1.Length; i++)
+            //{
+            //    for (int j = 0; j < arreglo2.Length; j++)
+            //    {
+            //        if (arreglo1[i] == arreglo2[j])
+            //        {
+            //            arreglo3[indice] = (arreglo1[i]);
+            //            indice++;
+            //        }
+            //    }
+            //}
+
+            //for (int i = 0; i < indice; i++)
+            //{
+            //    Console.WriteLine(arreglo3[i]);
+            //}
+
+
+            #endregion
+
+            #region Ejercicio 28
+
+            //string[] arregloString = new string[5];
+
+            //for (int i = 0; i < arregloString.Length; i++)
+            //{
+            //    Console.WriteLine("complete el arreglo de string");
+            //    arregloString[i] = Console.ReadLine();
+            //}
+
+            //for (int i = 0; i < arregloString.Length; i++)
+            //{
+            //    if (arregloString[i].Length > 5)
+            //    {
+            //        Console.WriteLine(arregloString[i]);
+            //    }
+            //}
+
+            #endregion
+
+            #region Ejercicio 29
+
+            int[] arreglo1 = new int[5];
+
+            for (int i = 0; i < arreglo1.Length; i++)
+            {
+                Console.WriteLine("Complete el arreglo 1");
+                arreglo1[i] = int.Parse(Console.ReadLine());
+            }
+
+            int[] arreglo2 = new int[5];
+
+            for (int i = 0; i < arreglo2.Length; i++)
+            {
+                Console.WriteLine("Complete el arreglo 2");
+                arreglo2[i] = int.Parse(Console.ReadLine());
+            }
+            int[] arreglo3 = new int[5];
+            int indice = 0;
+
+            for (int i = 0; i < arreglo2.Length; i++)
+            {
+                for (int j = 0; j < arreglo1.Length; j++)
+                {
+                    if (arreglo1[j] != arreglo2[i] )
+                    {
+                        arreglo3[indice] = arreglo1[i];
+                        indice++;
+                    }
+                }
+            }
+
+            for (int i = 0; i < indice; i++)
+            {
+                Console.WriteLine(arreglo3[i]);
+            }
+            #endregion
 
         }
     }
