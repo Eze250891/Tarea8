@@ -30,7 +30,7 @@ namespace ConsoleApp1
             static string[] DeclararArregloString()
             {
                 string[] arregloString = new string[5];
-                
+
                 for (int i = 0; i < arregloString.Length; i++)
                 {
                     Console.WriteLine("complete el arreglo de string");
@@ -478,6 +478,7 @@ namespace ConsoleApp1
 
             //int[] arreglo3 = new int[6];
             //int indiceResultado = 0;
+
             //// recorro el primero arreglo
 
             //for (int i = 0; i < arreglo1.Length; i++)
@@ -498,6 +499,11 @@ namespace ConsoleApp1
             #endregion
 
             #region Ejercicio 14  incompleto
+
+            //Declara dos arreglos de números enteros y muestra en consola los elementos
+            //del primer arreglo que no están en el segundo arreglo.
+
+
             //int[] arreglo1 = new int[5];
 
             //for (int i = 0; i < arreglo1.Length; i++)
@@ -522,21 +528,64 @@ namespace ConsoleApp1
             //{
             //    for (int j = 0; j < arreglo2.Length; i++)
             //    {
-            //        if (arreglo1.Length != arreglo2.Length)
+            //        if (arreglo1[i] == arreglo2[j])
             //        {
-            //            arreglo3[contadorIndice] = arreglo1[i];
+
             //            contadorIndice++;
             //        }
-            //        else
-            //        {
-            //            arreglo3[contadorIndice] = 0;
-            //        }
+            //        else { arreglo3[contadorIndice] = arreglo1[i]; }
             //    }
             //}
 
             //for (int i = 0; i < contadorIndice; i++)
             //{
             //    Console.WriteLine($"No repite {arreglo3[i]}");
+            //}
+
+            #endregion
+
+            #region Ejercicio 15 sin hacer
+
+
+            #endregion
+
+            #region Ejercicio 16
+
+            // Declara un arreglo de números enteros y muestra en consola
+            // los elementos que se repiten más de una vez.
+
+            //int[] arregloRepeticion = new int[5];
+
+            //for(int i = 0;i < arregloRepeticion.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese los datos para el primer arreglo");
+            //    arregloRepeticion[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int numRepetido = 0;
+            //string noRepetido = "No hay numeros repetidos";
+            //int contador = 0;
+
+            //for(int i = 0; i < arregloRepeticion.Length ; i++)
+            //{
+            //    if(i == 0)
+            //    {
+            //        numRepetido = arregloRepeticion[i];
+            //    }
+            //    if (arregloRepeticion[i] == numRepetido)
+            //    {
+            //        contador++;
+            //    }
+
+            //}
+
+            //if(contador == 1) 
+            //{
+            //    Console.WriteLine(noRepetido);
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Se repite {contador} veces");
             //}
 
             #endregion
@@ -674,7 +723,11 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region Ejercicio 23 //sin hacer
+            #region Ejercicio 22 Resuelto en el 33
+
+            #endregion
+
+            #region Ejercicio 23 sin hacer
             //Declarar un arreglo de números enteros y ordena los elementos de manera
             //ascendente y muestra el arreglo ordenado en consola.
 
@@ -775,42 +828,164 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region Ejercicio 29
+            #region Ejercicio 29 incompleto
 
-            int[] arreglo1 = new int[5];
+            //int[] arreglo1 = new int[5];
 
-            for (int i = 0; i < arreglo1.Length; i++)
-            {
-                Console.WriteLine("Complete el arreglo 1");
-                arreglo1[i] = int.Parse(Console.ReadLine());
-            }
+            //for (int i = 0; i < arreglo1.Length; i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo 1");
+            //    arreglo1[i] = int.Parse(Console.ReadLine());
+            //}
 
-            int[] arreglo2 = new int[5];
+            //int[] arreglo2 = new int[5];
 
-            for (int i = 0; i < arreglo2.Length; i++)
-            {
-                Console.WriteLine("Complete el arreglo 2");
-                arreglo2[i] = int.Parse(Console.ReadLine());
-            }
-            int[] arreglo3 = new int[5];
-            int indice = 0;
+            //for (int i = 0; i < arreglo2.Length; i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo 2");
+            //    arreglo2[i] = int.Parse(Console.ReadLine());
+            //}
+            //int[] arreglo3 = new int[5];
+            //int indice = 0;
 
-            for (int i = 0; i < arreglo2.Length; i++)
-            {
-                for (int j = 0; j < arreglo1.Length; j++)
-                {
-                    if (arreglo1[j] != arreglo2[i] )
-                    {
-                        arreglo3[indice] = arreglo1[i];
-                        indice++;
-                    }
-                }
-            }
+            //for (int i = 0; i < arreglo2.Length; i++)
+            //{
+            //    for (int j = 0; j < arreglo1.Length; j++)
+            //    {
+            //        if (arreglo1[j] != arreglo2[i] )
+            //        {
+            //            arreglo3[indice] = arreglo1[i];
+            //            indice++;
+            //        }
+            //    }
+            //}
 
-            for (int i = 0; i < indice; i++)
-            {
-                Console.WriteLine(arreglo3[i]);
-            }
+            //for (int i = 0; i < indice; i++)
+            //{
+            //    Console.WriteLine(arreglo3[i]);
+            //}
+            #endregion
+
+            #region Ejercicio 30
+
+            //Declarar un arreglo de números enteros y mostrar en consola los elementos
+            //que están entre 5 y 10.
+
+            //int[] arregloEntero = new int[5];
+
+            //for(int i = 0;i < arregloEntero.Length;i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo con numeros enteros");
+            //    arregloEntero[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //for(int i = 0; i<arregloEntero.Length; i++)
+            //{
+            //    if(arregloEntero[i] >= 5 && arregloEntero[i] <= 10)
+            //    {
+            //        Console.WriteLine(arregloEntero[i]);
+            //    }
+            //}
+
+            #endregion
+
+            #region Ejercicio 31 
+            // Declarar un arreglo de números enteros y un número entero como valor de búsqueda.
+            // Muestra en consola todos los índices de los elementos que contienen el valor de búsqueda en el arreglo.
+
+            //Console.WriteLine("ingrese el num a buscar");
+            //int numBusqueda = int.Parse(Console.ReadLine());
+
+            //int[] arreglo = new int[10];
+
+            //for (int i = 0; i < arreglo.Length; i++)
+            //{
+            //    Console.WriteLine("Llene el arreglo");
+            //    arreglo[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int indice = 0;
+
+            //for (int i = 0; i < arreglo.Length; i++)
+            //{
+            //    if (arreglo[i] == numBusqueda)
+            //    {
+            //        indice = i;
+            //    }
+            //}
+
+            //if (indice != -1)
+            //{
+            //    Console.WriteLine($"El numero {numBusqueda} se encuentra en el indice {indice}"); 
+            //}
+
+            #endregion
+
+            #region Ejercicio 32  sin hacer
+
+
+            #endregion
+
+            #region Ejercicio 33
+            //  Declarar un arreglo de números enteros y encontrar el elemento que aparece
+            //  la mayoría de las veces en el arreglo. Muestra el resultado en consola.
+
+            //int[] arregloRepetido = new int[10];
+
+
+            //for(int i = 0;i < arregloRepetido.Length; i++)
+            //{
+            //    Console.WriteLine("Complete el arreglo");
+            //    arregloRepetido[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int contador = 0;
+            //int numCompara = 0;
+
+            //for(int i = 0; i<arregloRepetido.Length;i++)
+            //{
+            //        if(i == 0)
+            //        {
+            //            numCompara += arregloRepetido[i];
+            //        }
+
+            //        if (arregloRepetido[i] == numCompara)
+            //        {
+            //            contador++;
+            //        }
+
+            //}
+
+            //Console.WriteLine($"El numero {numCompara} se repitio {contador} veces. ");
+
+            #endregion
+
+            #region Ejercicio 34
+
+            // Declarar un arreglo de strings y encuentra la cadena más larga del arreglo.
+            // Muestra la cadena más larga en consola.
+
+            //string[] arregloString = new string[5];
+
+            //for(int i = 0;i < arregloString.Length; i++)
+            //{
+            //    Console.WriteLine("complete el arreglo con string");
+            //    arregloString[i] = Console.ReadLine();
+            //}
+
+            //string palabraLarga = "";
+
+            //for(int i = 0;i < arregloString.Length; i++)
+            //{
+            //    if (arregloString[i].Length >= palabraLarga.Length)
+            //    {
+            //        palabraLarga = arregloString[i];
+            //    }
+
+            //}
+
+            //Console.WriteLine($"La palabra mas larga de este arreglo es {palabraLarga}");
+
             #endregion
 
         }
